@@ -7,4 +7,6 @@ add_executable(untitled main.cpp
         RubiksCube.cpp
         RubiksCube.h
         RubiksCube3dArray.cpp
-        RubiksCube3dArray.h)
+        RubiksCube3dArray.h
+        RubiksCube1dArray.cpp
+        RubiksCube1dArray.h)

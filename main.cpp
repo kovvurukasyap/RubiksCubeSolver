@@ -1,5 +1,6 @@
 
 #include<bits/stdc++.h>
+#include "RubiksCube1dArray.h"
 #include "RubiksCube3dArray.h"
 
 int main() {
@@ -38,6 +39,51 @@ int main() {
 
     // RubiksCube3dArray cube1;
     // RubiksCube3dArray cube2;
+    // if(cube1 == cube2) cout << "Is equal\n";
+    //    else cout << "Not Equal\n";
+    // cube1.randomShuffleCube(1);
+    // if(cube1 == cube2) cout << "Is equal\n";
+    //     else cout << "Not Equal\n";
+    // cube2 = cube1;
+    // if(cube1 == cube2) cout << "Is equal\n";
+    //     else cout << "Not Equal\n";
+
+
+    //RubiksCube1dArray object1DArray;
+    //object1DArray.print();
+    // if (object1DArray.isSolved()) cout << "SOLVED\n\n";
+    //    else cout << "NOT SOLVED\n\n";
+
+    //object1DArray.u();
+    // object1DArray.uPrime();
+    // object1DArray.u2();
+    //
+    // object1DArray.l();
+    // object1DArray.lPrime();
+    // object1DArray.l2();
+    //
+    // object1DArray.f();
+    // object1DArray.fPrime();
+    // object1DArray.f2();
+    //
+    // object1DArray.r();
+    // object1DArray.rPrime();
+    // object1DArray.r2();
+    //
+    // object1DArray.b();
+    // object1DArray.bPrime();
+    // object1DArray.b2();
+    //
+    // object1DArray.d();
+    // object1DArray.dPrime();
+    // object1DArray.d2();
+
+    // object1DArray.print();
+    // if (object1DArray.isSolved()) cout << "SOLVED\n\n";
+    // else cout << "NOT SOLVED\n\n";
+
+    // RubiksCube1dArray cube1;
+    // RubiksCube1dArray cube2;
     // if(cube1 == cube2) cout << "Is equal\n";
     //    else cout << "Not Equal\n";
     // cube1.randomShuffleCube(1);
