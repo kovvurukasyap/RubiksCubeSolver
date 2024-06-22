@@ -5,6 +5,7 @@
 #include "RubiksCube3dArray.h"
 #include "DFSSolver.h"
 #include "BFSSolver.h"
+#include "IDFSSolver.h"
 
 int main() {
     // RubiksCube3dArray object3DArray;
@@ -156,6 +157,23 @@ int main() {
     // bfsSolver.rubiksCube.print();
 
      /**************************************************************************/
+
+    RubiksCube3dArray cube;
+    cube.print();
+
+    vector<RubiksCube::MOVE> shuffle_moves = cube.randomShuffleCube(3);
+    for (auto move: shuffle_moves) cout << cube.getMove(move) << " ";
+    cout << "\n";
+    cube.print();
+
+    IDFSSolver<RubiksCube3dArray> iddfsSolver(cube, 7);
+    vector<RubiksCube::MOVE> solve_moves = iddfsSolver.solve();
+
+    for (auto move: solve_moves) cout << cube.getMove(move) << " ";
+    cout << "\n";
+    iddfsSolver.rubiksCube.print();
+
+    /**************************************************************************/
 
     return 0;
 }
