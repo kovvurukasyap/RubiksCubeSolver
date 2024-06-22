@@ -64,5 +64,9 @@ public:
 };
 
 
+class Hash1d {
+    size_t operator()(const RubiksCube1dArray &r1) const ;
+};
+
 
 #endif //RUBIKSCUBE1DARRAY_H

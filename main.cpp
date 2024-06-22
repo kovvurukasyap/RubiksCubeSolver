@@ -2,6 +2,7 @@
 #include<bits/stdc++.h>
 #include "RubiksCube1dArray.h"
 #include "RubiksCube3dArray.h"
+#include "DFSSolver.h"
 
 int main() {
     // RubiksCube3dArray object3DArray;
@@ -92,6 +93,21 @@ int main() {
     // cube2 = cube1;
     // if(cube1 == cube2) cout << "Is equal\n";
     //     else cout << "Not Equal\n";
+
+    RubiksCube3dArray cube;
+    cube.print();
+
+    vector<RubiksCube::MOVE> shuffle_moves = cube.randomShuffleCube(6);
+    for (auto move: shuffle_moves) cout << cube.getMove(move) << " ";
+    cout << "\n";
+    cube.print();
+
+    DFSSolver<RubiksCube3dArray> dfsSolver(cube, 8);
+    vector<RubiksCube::MOVE> solve_moves = dfsSolver.solve();
+
+    for (auto move: solve_moves) cout << cube.getMove(move) << " ";
+    cout << "\n";
+    dfsSolver.rubiksCube.print();
 
     return 0;
 }

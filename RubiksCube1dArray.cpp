@@ -243,3 +243,9 @@ RubiksCube1dArray &RubiksCube1dArray::operator=(const RubiksCube1dArray &r1) {
     }
     return *this;
 }
+
+size_t Hash1d::operator()(const RubiksCube1dArray &r1) const {
+    string str = "";
+    for (int i = 0; i < 54; i++) str += r1.cube[i];
+    return hash<string>()(str);
+}
