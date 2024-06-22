@@ -65,6 +65,7 @@ public:
 
 
 class Hash1d {
+public:
     size_t operator()(const RubiksCube1dArray &r1) const ;
 };
 

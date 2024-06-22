@@ -62,6 +62,7 @@ public:
 };
 
 class Hash3d {
+public:
     size_t operator()(const RubiksCube3dArray &r1) const ;
 };
 
