@@ -18,4 +18,5 @@ add_executable(untitled main.cpp
         DataBases/math.h
         DataBases/NibbleArray.cpp
         DataBases/NibbleArray.h
+        DataBases/PermutationIndexer.h
 )
