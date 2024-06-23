@@ -6,6 +6,7 @@
 #include "DFSSolver.h"
 #include "BFSSolver.h"
 #include "IDFSSolver.h"
+#include "IDAstarSolver.h"
 
 int main() {
     // RubiksCube3dArray object3DArray;
@@ -156,24 +157,39 @@ int main() {
     // cout << "\n";
     // bfsSolver.rubiksCube.print();
 
-     /**************************************************************************/
-
-    RubiksCube3dArray cube;
-    cube.print();
-
-    vector<RubiksCube::MOVE> shuffle_moves = cube.randomShuffleCube(3);
-    for (auto move: shuffle_moves) cout << cube.getMove(move) << " ";
-    cout << "\n";
-    cube.print();
-
-    IDFSSolver<RubiksCube3dArray> iddfsSolver(cube, 7);
-    vector<RubiksCube::MOVE> solve_moves = iddfsSolver.solve();
-
-    for (auto move: solve_moves) cout << cube.getMove(move) << " ";
-    cout << "\n";
-    iddfsSolver.rubiksCube.print();
+    //  /**************************************************************************/
+    //
+    // RubiksCube3dArray cube;
+    // cube.print();
+    //
+    // vector<RubiksCube::MOVE> shuffle_moves = cube.randomShuffleCube(3);
+    // for (auto move: shuffle_moves) cout << cube.getMove(move) << " ";
+    // cout << "\n";
+    // cube.print();
+    //
+    // IDFSSolver<RubiksCube3dArray> iddfsSolver(cube, 7);
+    // vector<RubiksCube::MOVE> solve_moves = iddfsSolver.solve();
+    //
+    // for (auto move: solve_moves) cout << cube.getMove(move) << " ";
+    // cout << "\n";
+    // iddfsSolver.rubiksCube.print();
+    //
+    // /**************************************************************************/
 
     /**************************************************************************/
+       RubiksCube3dArray cube;
+       cube.print();
+
+       vector<RubiksCube::MOVE> shuffle_moves = cube.randomShuffleCube(5);
+       for (auto move: shuffle_moves) cout << cube.getMove(move) << " ";
+       cout << "\n";
+       cube.print();
+
+       IDAstarSolver<RubiksCube3dArray, Hash3d> idAstarSolver(cube);
+       vector<RubiksCube::MOVE> solve_moves = idAstarSolver.solve();
+       for (auto move: solve_moves) cout << cube.getMove(move) << " ";
+       cout << "\n";
+       idAstarSolver.rubiksCube.print();
 
     return 0;
 }

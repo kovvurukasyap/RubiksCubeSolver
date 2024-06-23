@@ -12,4 +12,5 @@ add_executable(untitled main.cpp
         RubiksCube1dArray.h
         DFSSolver.h
         BFSSolver.h
-        IDFSSolver.h)
+        IDFSSolver.h
+        IDAstarSolver.h)
