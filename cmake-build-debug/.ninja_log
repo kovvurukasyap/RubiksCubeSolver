@@ -1,8 +1,6 @@
 # ninja log v6
-10	2513	7407490464308683	CMakeFiles/untitled.dir/main.cpp.obj	930481189a3fdd26
+7	1588	7408491236265741	CMakeFiles/untitled.dir/main.cpp.obj	930481189a3fdd26
 14	1387	7406830237571987	CMakeFiles/untitled.dir/RubiksCube.cpp.obj	c1d4130fdd9ce4cb
 32	2484	7407478830417328	CMakeFiles/untitled.dir/RubiksCube3dArray.cpp.obj	708865765371ac23
-2513	2707	7407490489353770	untitled.exe	61b1214b2215efad
-56	2530	7407478830660492	CMakeFiles/untitled.dir/RubiksCube1dArray.cpp.obj	c2f203bb92c7f317
-7	1588	7408491236265741	CMakeFiles/untitled.dir/main.cpp.obj	930481189a3fdd26
 1589	1737	7408491252075099	untitled.exe	61b1214b2215efad
+56	2530	7407478830660492	CMakeFiles/untitled.dir/RubiksCube1dArray.cpp.obj	c2f203bb92c7f317

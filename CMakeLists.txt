@@ -13,4 +13,9 @@ add_executable(untitled main.cpp
         DFSSolver.h
         BFSSolver.h
         IDFSSolver.h
-        IDAstarSolver.h)
+        IDAstarSolver.h
+        DataBases/math.cpp
+        DataBases/math.h
+        DataBases/NibbleArray.cpp
+        DataBases/NibbleArray.h
+)
