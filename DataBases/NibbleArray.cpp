@@ -5,8 +5,8 @@
 #include "NibbleArray.h"
 using namespace std;
 
-NibbleArray::NibbleArray(const size_t size, const uint8_t val) {
-        size(size), arr.resize(size / 2 + 1, val) ;
+NibbleArray::NibbleArray(const size_t size1, const uint8_t val) {
+        size = size1, arr.resize(size / 2 + 1, val) ;
 }
 
 uint8_t NibbleArray::get(const size_t pos) const {
